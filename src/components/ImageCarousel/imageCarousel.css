@@ -1,5 +1,9 @@
 @import "react-alice-carousel/lib/alice-carousel.css";
 
 .carouselImage {
-  width: 400px
+  width: 400px;
+}
+
+.alice-carousel__stage {
+  margin-top: 30px;
 }

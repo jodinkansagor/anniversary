@@ -1,18 +1,26 @@
 .headerContainer {
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   justify-content: space-between;
   align-items: center;
   background-color: #897b65;
   filter: drop-shadow(1px 1px 2px #897b65);
-  position: sticky;
-  top: 0;
-  z-index: 2;
+  width: 100vw;
 }
 
 .logo {
-  margin-left: 30px;
   height: 175px;
   width: 175px;
   padding: 15px;
+}
+
+@media (min-width: 800px) {
+  .headerContainer {
+    display: flex;
+    flex-direction: row;
+  }
+
+  .logo {
+    margin-left: 30px;
+  }
 }

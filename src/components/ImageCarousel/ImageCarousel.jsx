@@ -19,8 +19,8 @@ const sliderImages = imageArray.map((image, i) => (
 
 const responsive = {
   0: { items: 1 },
-  568: { items: 2 },
-  1024: { items: 3 },
+  800: {items: 2 },
+  1200: { items: 3 },
 };
 
 const ImageCarousel = () => {
@@ -29,8 +29,8 @@ const ImageCarousel = () => {
       items={sliderImages}
       infinite
       animationDuration={800}
-      paddingLeft={25}
-      paddingRight={25}
+      // paddingLeft={25}
+      // paddingRight={25}
       responsive={responsive}
       disableDotsControls
     />
