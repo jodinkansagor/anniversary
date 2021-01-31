@@ -6,7 +6,7 @@ import "./header.css";
 const Header = () => {
   return (
     <div className="headerContainer">
-      <img src={artAndToby} className="logo" />
+      <img src={artAndToby} alt="Toby and Art Logo" className="logo" />
       <NavBar />
     </div>
   );

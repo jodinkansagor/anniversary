@@ -13,7 +13,7 @@ const imageArray = [dave, neighburgs, sharonAlan, voodoo, andrew, steveWedding];
 
 const sliderImages = imageArray.map((image, i) => (
   <div key={i}>
-    <img src={image} className="carouselImage" />
+    <img src={image} alt={image} className="carouselImage" />
   </div>
 ));
 
