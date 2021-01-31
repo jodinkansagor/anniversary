@@ -1,0 +1,12 @@
+.navContainer {
+  display: flex;
+  flex-direction: row;
+  margin-right: 30px;
+}
+
+.navLink {
+  margin: 10px;
+  color: #8ac5fa;
+  text-decoration: none;
+  font-size: 32px;
+}
