@@ -1,11 +1,16 @@
-
 .imageSliderAndLabel {
-  width: 500px;
-  /* border: 3px dotted red; */
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.slider {
+  width: 450px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
 }
 
 .carouselImage {
-  width: 400px;
+  height: 600px;
 }
-
-

@@ -21,20 +21,16 @@ const Carousel = () => {
     steveWedding,
   ];
 
-  // const sliderImages = imageArray.map((image, i) => (
-  //   <img key={i} src={image} alt={image} className="carouselImage" />
-  // ));
 
   const image = {
     accessibility: true,
     slidesToShow: 1,
     slidesToScroll: 1,
-    dots: true,
   };
 
   return (
     <div className="imageSliderAndLabel">
-      <Slider {...image}>
+      <Slider {...image} className="slider">
         {imageArray.map((image, i) => (
           <img key={i} src={image} alt={image} className="carouselImage" />
         ))}
