@@ -17,22 +17,34 @@ const sliderImages = imageArray.map((image, i) => (
   </div>
 ));
 
+
 const responsive = {
   0: { items: 1 },
-  800: {items: 2 },
-  1200: { items: 3 },
+  900: { items: 2 },
+  1400: { items: 3 },
+};
+
+const renderPrevButton = ({ isDisabled }) => {
+  return <span style={{ opacity: isDisabled ? "0.5" : 1 }}>Previous</span>;
+};
+
+const renderNextButton = ({ isDisabled }) => {
+  return <span style={{ opacity: isDisabled ? "0.5" : 1 }}>Next</span>;
 };
 
 const ImageCarousel = () => {
   return (
     <AliceCarousel
       items={sliderImages}
+      // paddingLeft={20}
+      // paddingRight={20}
+      responsive={responsive}
       infinite
       animationDuration={800}
-      // paddingLeft={25}
-      // paddingRight={25}
-      responsive={responsive}
+      mousetracking
       disableDotsControls
+      renderPrevButton={renderPrevButton}
+      renderNextButton={renderNextButton}
     />
   );
 };
