@@ -1,16 +1,17 @@
 import React from "react";
-import "./navBar.css";
+import useStyles from "./NavBar.styles.js";
 
 const NavBar = () => {
+  const classes = useStyles();
   return (
-    <nav className="navContainer">
-      <a className="navLink" href="#photos">
+    <nav className={classes.navContainer}>
+      <a className={classes.navLink} href="#photos">
         Photos
       </a>
-      <a className="navLink" href="#video">
+      <a className={classes.navLink} href="#video">
         Video
       </a>
-      <a className="navLink" href="testimonials">
+      <a className={classes.navLink} href="testimonials">
         Testimonials
       </a>
     </nav>

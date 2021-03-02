@@ -1,12 +1,12 @@
 import React from "react";
 import artAndToby from "../../assets/artAndToby.gif";
 import NavBar from "../NavBar";
-import "./header.css";
-
+import useStyles from "./Header.styles"
 const Header = () => {
+  const classes = useStyles()
   return (
-    <div className="headerContainer">
-      <img src={artAndToby} alt="Toby and Art Logo" className="logo" />
+    <div className={classes.headerContainer}>
+      <img src={artAndToby} alt="Toby and Art Logo" className={classes.logo} />
       <NavBar />
     </div>
   );

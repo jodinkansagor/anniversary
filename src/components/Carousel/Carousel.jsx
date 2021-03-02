@@ -1,38 +1,26 @@
 import React from "react";
 import Slider from "react-slick";
-import "./carousel.css";
-import andrew from "../../assets/andrewAndKansagors.png";
-import steveWedding from "../../assets/1971.png";
-import dave from "../../assets/daveAndKansagors.png";
-import neighburgs from "../../assets/neightburgsAndKansagors.png";
-import sharonAlan from "../../assets/sharonAlanArtToby.png";
-import voodoo from "../../assets/voodooDonuts.png";
-
+import useStyles from "./Carousel.styles";
 import "slick-carousel/slick/slick-theme.css";
 import "slick-carousel/slick/slick.css";
+import imageArray from "./imageArray";
 
 const Carousel = () => {
-  const imageArray = [
-    dave,
-    neighburgs,
-    sharonAlan,
-    voodoo,
-    andrew,
-    steveWedding,
-  ];
-
+  const classes = useStyles();
 
   const image = {
     accessibility: true,
     slidesToShow: 1,
     slidesToScroll: 1,
+    draggable: true,
+    lazyLoad: "onDemand",
   };
 
   return (
-    <div className="imageSliderAndLabel">
-      <Slider {...image} className="slider">
+    <div className={classes.imageSliderAndLabel}>
+      <Slider {...image}>
         {imageArray.map((image, i) => (
-          <img key={i} src={image} alt={image} className="carouselImage" />
+          <img key={i} src={image} alt={image} />
         ))}
       </Slider>
     </div>
