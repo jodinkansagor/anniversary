@@ -1,3 +1,4 @@
+import { Typography } from "@material-ui/core";
 import React from "react";
 import artAndToby from "../../assets/artAndToby.gif";
 import NavBar from "../NavBar";
@@ -7,6 +8,7 @@ const Header = () => {
   return (
     <div className={classes.headerContainer}>
       <img src={artAndToby} alt="Toby and Art Logo" className={classes.logo} />
+      {/* <Typography className={classes.text} variant='h3'>Mazel Tov Art & Toby!</Typography> */}
       <NavBar />
     </div>
   );

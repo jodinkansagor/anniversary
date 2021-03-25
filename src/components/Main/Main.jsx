@@ -2,13 +2,18 @@ import React from "react";
 import useStyles from "./Main.styles";
 import Carousel from "../Carousel";
 import Header from "../Header";
+import IntroBlock from "../IntroBlock";
+import Footer from "../Footer";
 
 const Main = () => {
   const classes = useStyles();
   return (
     <main className={classes.main}>
       <Header />
-      <Carousel />
+      <div className={classes.bodyContainer}>
+        <IntroBlock />
+        <Carousel />
+      </div>
     </main>
   );
 };

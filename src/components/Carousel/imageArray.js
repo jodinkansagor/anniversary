@@ -19,14 +19,21 @@ import someBattlefield from "../../assets/someBattlefield.png";
 import tobyAndElaine from "../../assets/tobyAndElaine.png";
 import tobyNeverSmiles from "../../assets/tobyNeverSmiles.png";
 import weHaveLotsOfFriends from "../../assets/weHaveLotsOfFriends.png";
+import woahWow from "../../assets/woahWow.png";
+import neigburgAndKansagor from "../../assets/neigburgAndKansagor.png";
+import momAndDadMountain from "../../assets/momAndDadMountain.png";
+import kansabach from "../../assets/kansabach.png";
+import momAndAuntElaine2 from "../../assets/momAndAuntElaine2.png";
+
 
 const imageArray = [
+  momAndDadMountain,
   dave,
   neighburgs,
   sharonAlan,
+  steveWedding,
   voodoo,
   andrew,
-  steveWedding,
   adamBarMitzvah,
   artHasNoBeard,
   auerbachWedding,
@@ -42,6 +49,10 @@ const imageArray = [
   tobyAndElaine,
   tobyNeverSmiles,
   weHaveLotsOfFriends,
+  woahWow,
+  neigburgAndKansagor,
+  kansabach,
+  momAndAuntElaine2
 ];
 
 export default imageArray;

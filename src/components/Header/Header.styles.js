@@ -1,4 +1,5 @@
 import { makeStyles } from "@material-ui/core";
+import { colors } from "../../style/MuiTheme";
 
 const useStyles = makeStyles((theme) => ({
   headerContainer: {
@@ -6,20 +7,21 @@ const useStyles = makeStyles((theme) => ({
     flexDirection: "column",
     justifyContent: "space-between",
     alignItems: "center",
-    backgroundColor: "#897b65",
+    backgroundColor: colors.primary,
     filter: "drop-shadow(1px 1px 2px #897b65)",
-    // width: "100vw",
     [theme.breakpoints.up("md")]: {
       display: "flex",
       flexDirection: "row",
-      padding: "0px 20px",
+      padding: "0px 24px",
     },
   },
-
+  text: {
+    color: colors.secondary
+  },
   logo: {
     height: "175px",
     width: "175px",
-    padding: "15px",
+    padding: "16px 8px",
   },
 }));
 

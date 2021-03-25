@@ -2,22 +2,27 @@ import { makeStyles } from "@material-ui/core";
 
 const useStyles = makeStyles((theme) => ({
   imageSliderAndLabel: {
-    width: "500px",
-    margin: "50px"
+    width: "448px",
+    justifyContent: "center",
+    paddingBottom: theme.spacing(3),
+    [theme.breakpoints.up("sm")]: {
+      width: "578px",
+    },
+    display: "flex",
+    "& .slick-slider": {
+      width: "320px",
+      [theme.breakpoints.up("sm")]: {
+        width: "450px",
+      },
+    },
   },
 
   mySlider: {
-    width: "450px",
+    width: "400px",
     display: "flex",
     flexDirection: "row",
     alignItems: "center",
-    marginTop: "30px",
-    "& .slick-slide": {
-      width: "auto",
-    },
-    "& .slick-active": {
-      width: "auto",
-    },
+    marginTop: theme.spacing(4),
   },
 }));
 

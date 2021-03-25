@@ -1,5 +1,5 @@
 import { makeStyles } from "@material-ui/core";
-
+import { colors } from "../../style/MuiTheme";
 const useStyles = makeStyles((theme) => ({
   navContainer: {
     display: "flex",
@@ -8,19 +8,10 @@ const useStyles = makeStyles((theme) => ({
 
   navLink: {
     margin: "10px",
-    color: "#8ac5fa",
+    color: colors.secondary,
     textDecoration: "none",
     fontSize: "24px",
   },
 }));
 
-// @media (min-width: 800px) {
-//   .navContainer {
-//     margin-right: 30px;
-//   }
-//   .navLink {
-//     font-size: 32px;
-//   }
-// }
-
-export default useStyles
+export default useStyles;
