@@ -16,7 +16,8 @@ const useStyles = makeStyles((theme) => ({
     },
   },
   text: {
-    color: colors.secondary
+    color: colors.secondary,
+    textAlign: "center",
   },
   logo: {
     height: "175px",

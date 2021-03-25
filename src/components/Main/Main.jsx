@@ -3,18 +3,17 @@ import useStyles from "./Main.styles";
 import Carousel from "../Carousel";
 import Header from "../Header";
 import IntroBlock from "../IntroBlock";
-import Footer from "../Footer";
 
 const Main = () => {
   const classes = useStyles();
   return (
-    <main className={classes.main}>
+    <div className={classes.main}>
       <Header />
       <div className={classes.bodyContainer}>
         <IntroBlock />
         <Carousel />
       </div>
-    </main>
+    </div>
   );
 };
 

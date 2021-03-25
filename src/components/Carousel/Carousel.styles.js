@@ -2,7 +2,7 @@ import { makeStyles } from "@material-ui/core";
 
 const useStyles = makeStyles((theme) => ({
   imageSliderAndLabel: {
-    width: "448px",
+    width: "320px",
     justifyContent: "center",
     paddingBottom: theme.spacing(3),
     [theme.breakpoints.up("sm")]: {
