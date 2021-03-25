@@ -7,13 +7,13 @@ import IntroBlock from "../IntroBlock";
 const Main = () => {
   const classes = useStyles();
   return (
-    <div className={classes.main}>
+    <main className={classes.main}>
       <Header />
       <div className={classes.bodyContainer}>
         <IntroBlock />
         <Carousel />
       </div>
-    </div>
+    </main>
   );
 };
 

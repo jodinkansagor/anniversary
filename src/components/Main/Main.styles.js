@@ -2,7 +2,8 @@ import { makeStyles } from "@material-ui/core";
 
 const useStyles = makeStyles((theme) => ({
   main: {
-
+    backgroundColor: "#efe7db",
+    height: "100vh",
   },
   bodyContainer: {
     backgroundColor: "#efe7db",
