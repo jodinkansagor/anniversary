@@ -1,14 +1,19 @@
 import React from "react";
+import useStyles from "./Main.styles";
+import Carousel from "../Carousel";
 import Header from "../Header";
-import "./main.css"
-import ImageCarousel from "../ImageCarousel"
+import IntroBlock from "../IntroBlock";
 
 const Main = () => {
+  const classes = useStyles();
   return (
-    <main className="main">
+    <div className={classes.main}>
       <Header />
-      <ImageCarousel />
-    </main>
+      <div className={classes.bodyContainer}>
+        <IntroBlock />
+        <Carousel />
+      </div>
+    </div>
   );
 };
 
