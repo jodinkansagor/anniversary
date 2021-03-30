@@ -5,24 +5,29 @@ const useStyles = makeStyles((theme) => ({
   headerContainer: {
     display: "flex",
     flexDirection: "column",
-    justifyContent: "space-between",
+    justifyContent: "center",
     alignItems: "center",
     backgroundColor: colors.primary,
     filter: "drop-shadow(1px 1px 2px #897b65)",
     [theme.breakpoints.up("md")]: {
       display: "flex",
       flexDirection: "row",
-      padding: "0px 24px",
+      padding: "0px 60px",
     },
   },
   text: {
     color: colors.secondary,
     textAlign: "center",
+    padding: '0px 40px',
+    marginBottom: theme.spacing(2),
+    [theme.breakpoints.up('md')]: {
+      marginBottom: theme.spacing(0)
+    }
   },
   logo: {
     height: "175px",
     width: "175px",
-    padding: "16px 8px",
+    padding: "16px 40px",
   },
 }));
 

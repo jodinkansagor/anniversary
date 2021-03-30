@@ -6,7 +6,7 @@ import "slick-carousel/slick/slick.css";
 import imageArray from "./imageArray";
 import { ReactComponent as PrevArrow } from "../../assets/arrow_back_ios-24px.svg";
 import { ReactComponent as NextArrow } from "../../assets/arrow_forward_ios-24px.svg";
-import { Button, useTheme, useMediaQuery } from "@material-ui/core";
+import { Button, useTheme, useMediaQuery, Typography } from "@material-ui/core";
 
 const Carousel = () => {
   const classes = useStyles();
@@ -47,6 +47,7 @@ const Carousel = () => {
           <NextArrow />
         </Button>
       )}
+      {!smUp && <Typography>Swipe to see more pics!</Typography>}
     </div>
   );
 };
