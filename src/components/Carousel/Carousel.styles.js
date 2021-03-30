@@ -5,7 +5,10 @@ const useStyles = makeStyles((theme) => ({
     width: "320px",
     justifyContent: "center",
     paddingBottom: theme.spacing(3),
+    flexDirection: 'column',
+    alignItems: "center",
     [theme.breakpoints.up("sm")]: {
+      flexDirection: 'row',
       width: "578px",
     },
     display: "flex",

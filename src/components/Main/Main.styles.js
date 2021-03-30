@@ -15,7 +15,11 @@ const useStyles = makeStyles((theme) => ({
     [theme.breakpoints.up("md")]: {
       flexDirection: "row",
       justifyContent: "space-around",
+      alignItems: "flex-start",
     },
+    // [theme.breakpoints.up("xl")]: {
+    //   maxWidth: "1440px",
+    // },
   },
   carouselContainer: {
     display: "flex",
