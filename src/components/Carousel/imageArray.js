@@ -33,13 +33,25 @@ import selfie from "../../assets/selfie.png";
 import safta from "../../assets/safta.png";
 import jordanMartialArts from "../../assets/jordanMartialArts.png";
 import kansabach2 from "../../assets/kansabach2.png";
-
-
-
-
+import garageDinner from "../../assets/garageDinner.png";
+import gaylesWeddingKansabach from "../../assets/gaylesWeddingKansabach.png";
+import gaylesWeddingKansagor from "../../assets/gaylesWeddingKansagor.png";
+import gaylesWeddingKansagor2 from "../../assets/gaylesWeddingKansagor2.png";
+import jordanBarMitzvah from "../../assets/jordanBarMitzvah.png";
+import kansagorHopeDinner from "../../assets/kansagorHopeDinner.png";
+import kansagorJohnsDinner from "../../assets/kansagorJohnsDinner.png";
+import momAndBabyJordan from "../../assets/momAndBabyJordan.png";
+import openYourEyesToby from "../../assets/openYourEyesToby.png";
+import sweetMomAndDad from "../../assets/sweetMomAndDad.png";
 
 const imageArray = [
   tobyArtWedding1,
+  kansagorHopeDinner,
+  kansagorJohnsDinner,
+  momAndBabyJordan,
+  jordanBarMitzvah,
+  openYourEyesToby,
+  sweetMomAndDad,
   kansabach2,
   momAndDadMountain,
   dave,
@@ -52,11 +64,14 @@ const imageArray = [
   artHasNoBeard,
   auerbachWedding,
   withAdamK,
+  garageDinner,
+  gaylesWeddingKansabach,
   auerbachWedding2,
   babyDad,
   tobyArtWedding2,
   selfie,
   babyMom,
+  gaylesWeddingKansagor2,
   coolKids,
   jenniferBatMitzvah,
   longDress,
@@ -69,6 +84,7 @@ const imageArray = [
   safta,
   weHaveLotsOfFriends,
   tobyArtWedding3,
+  gaylesWeddingKansagor,
   jordanMartialArts,
   woahWow,
   neigburgAndKansagor,

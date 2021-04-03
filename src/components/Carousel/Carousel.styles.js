@@ -5,11 +5,11 @@ const useStyles = makeStyles((theme) => ({
     width: "320px",
     justifyContent: "center",
     paddingBottom: theme.spacing(3),
-    flexDirection: 'column',
+    flexDirection: "column",
     alignItems: "center",
     [theme.breakpoints.up("sm")]: {
-      flexDirection: 'row',
-      width: "578px",
+      flexDirection: "row",
+      width: "522px",
     },
     display: "flex",
     "& .slick-slider": {
@@ -19,13 +19,24 @@ const useStyles = makeStyles((theme) => ({
       },
     },
   },
-
+  imageContainer: {
+    width: '320px',
+    [theme.breakpoints.up("sm")]: {
+      width: "450px",
+    },
+  },
   mySlider: {
     width: "400px",
     display: "flex",
     flexDirection: "row",
     alignItems: "center",
     marginTop: theme.spacing(4),
+  },
+  image: {
+    width: '320px',
+    [theme.breakpoints.up("sm")]: {
+      width: "450px",
+    },
   },
 }));
 
