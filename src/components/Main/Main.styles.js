@@ -30,6 +30,16 @@ const useStyles = makeStyles((theme) => ({
     flexDirection: "row",
     width: "100%",
   },
+  videoContainer: {
+    display: "flex",
+    flexDirection: "column-reverse",
+    alignItems: "center",
+    width: "100%",
+    [theme.breakpoints.up('md')]: {
+      flexDirection: "row",
+      justifyContent: "space-around"
+    },
+  }
 }));
 
 export default useStyles;
