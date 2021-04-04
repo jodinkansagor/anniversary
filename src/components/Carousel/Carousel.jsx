@@ -20,6 +20,7 @@ const Carousel = () => {
     slidesToScroll: 1,
     draggable: true,
     arrows: false,
+    lazyLoad: "onDemand",
   };
 
   const handlePrev = () => {
@@ -39,7 +40,7 @@ const Carousel = () => {
       )}
       <Slider {...image} ref={sliderRef}>
         {imageArray.map((image, i) => (
-          <img key={i} src={image} alt={image} />
+          <img key={i} src={image} alt={image} className={classes.image} />
         ))}
       </Slider>
       {smUp && (

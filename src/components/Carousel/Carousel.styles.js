@@ -5,10 +5,10 @@ const useStyles = makeStyles((theme) => ({
     width: "320px",
     justifyContent: "center",
     paddingBottom: theme.spacing(3),
-    flexDirection: 'column',
+    flexDirection: "column",
     alignItems: "center",
     [theme.breakpoints.up("sm")]: {
-      flexDirection: 'row',
+      flexDirection: "row",
       width: "578px",
     },
     display: "flex",
@@ -19,7 +19,6 @@ const useStyles = makeStyles((theme) => ({
       },
     },
   },
-
   mySlider: {
     width: "400px",
     display: "flex",
@@ -27,6 +26,7 @@ const useStyles = makeStyles((theme) => ({
     alignItems: "center",
     marginTop: theme.spacing(4),
   },
+
 }));
 
 export default useStyles;
