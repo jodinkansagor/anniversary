@@ -3,7 +3,8 @@ import useStyles from "./Main.styles";
 import Carousel from "../Carousel";
 import Header from "../Header";
 import IntroBlock from "../IntroBlock";
-import VideoPlayer from "../VideoPlayer/VideoPlayer";
+import VideoPlayer from "../VideoPlayer";
+import VideoText from "../VideoText";
 
 const Main = () => {
   const classes = useStyles();
@@ -15,7 +16,10 @@ const Main = () => {
           <IntroBlock />
           <Carousel />
         </div>
+        <div className={classes.videoContainer}>
         <VideoPlayer />
+        <VideoText />
+        </div>
       </div>
     </main>
   );
