@@ -5,6 +5,7 @@ import Header from "../Header";
 import IntroBlock from "../IntroBlock";
 import VideoPlayer from "../VideoPlayer";
 import VideoText from "../VideoText";
+import { Typography } from "@material-ui/core";
 
 const Main = () => {
   const classes = useStyles();
@@ -17,9 +18,13 @@ const Main = () => {
           <Carousel />
         </div>
         <div className={classes.videoContainer}>
-        <VideoPlayer />
-        <VideoText />
+          <VideoPlayer />
+          <VideoText />
         </div>
+        <Typography variant="h6" className={classes.footer}>
+          ♥ Made with love by your children with the help of all of your amazing
+          friends. ♥
+        </Typography>
       </div>
     </main>
   );
