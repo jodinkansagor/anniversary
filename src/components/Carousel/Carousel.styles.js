@@ -9,7 +9,7 @@ const useStyles = makeStyles((theme) => ({
     alignItems: "center",
     [theme.breakpoints.up("sm")]: {
       flexDirection: "row",
-      width: "522px",
+      width: "578px",
     },
     display: "flex",
     "& .slick-slider": {
@@ -19,12 +19,6 @@ const useStyles = makeStyles((theme) => ({
       },
     },
   },
-  imageContainer: {
-    width: '320px',
-    [theme.breakpoints.up("sm")]: {
-      width: "450px",
-    },
-  },
   mySlider: {
     width: "400px",
     display: "flex",
@@ -32,12 +26,7 @@ const useStyles = makeStyles((theme) => ({
     alignItems: "center",
     marginTop: theme.spacing(4),
   },
-  image: {
-    width: '320px',
-    [theme.breakpoints.up("sm")]: {
-      width: "450px",
-    },
-  },
+
 }));
 
 export default useStyles;

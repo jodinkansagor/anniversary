@@ -8,6 +8,12 @@ const useStyles = makeStyles((theme) => ({
   bodyContainer: {
     backgroundColor: "#efe7db",
     display: "flex",
+    flexDirection: "column",
+    alignItems: "center",
+  },
+  introAndImages: {
+    backgroundColor: "#efe7db",
+    display: "flex",
     paddingTop: theme.spacing(4),
     flexDirection: "column",
     alignItems: "center",
@@ -17,9 +23,7 @@ const useStyles = makeStyles((theme) => ({
       justifyContent: "space-around",
       alignItems: "flex-start",
     },
-    // [theme.breakpoints.up("xl")]: {
-    //   maxWidth: "1440px",
-    // },
+    marginBottom: theme.spacing(4),
   },
   carouselContainer: {
     display: "flex",
