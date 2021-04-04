@@ -3,6 +3,10 @@ import { colors } from "../../style/MuiTheme";
 
 const useStyles = makeStyles((theme) => ({
   headerContainer: {
+    position: "fixed",
+    top: "0",
+    width: "100%",
+    zIndex: '1',
     display: "flex",
     flexDirection: "column",
     justifyContent: "center",
@@ -18,11 +22,11 @@ const useStyles = makeStyles((theme) => ({
   text: {
     color: colors.secondary,
     textAlign: "center",
-    padding: '0px 40px',
+    padding: "0px 40px",
     marginBottom: theme.spacing(2),
-    [theme.breakpoints.up('md')]: {
-      marginBottom: theme.spacing(0)
-    }
+    [theme.breakpoints.up("md")]: {
+      marginBottom: theme.spacing(0),
+    },
   },
   logo: {
     height: "175px",

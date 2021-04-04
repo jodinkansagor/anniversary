@@ -1,7 +1,9 @@
 import { makeStyles } from "@material-ui/core";
+import { colors } from "../../style/MuiTheme";
 
 const useStyles = makeStyles((theme) => ({
   main: {
+    paddingTop: "250px",
     backgroundColor: "#efe7db",
     height: "100vh",
   },
@@ -35,11 +37,16 @@ const useStyles = makeStyles((theme) => ({
     flexDirection: "column-reverse",
     alignItems: "center",
     width: "100%",
-    [theme.breakpoints.up('md')]: {
+    [theme.breakpoints.up("md")]: {
       flexDirection: "row",
-      justifyContent: "space-around"
+      justifyContent: "space-around",
     },
-  }
+  },
+  footer: {
+    color: colors.primary,
+    paddingBottom: theme.spacing(3),
+    paddingTop: theme.spacing(3),
+  },
 }));
 
 export default useStyles;

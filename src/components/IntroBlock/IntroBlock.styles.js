@@ -3,7 +3,7 @@ import { colors } from "../../style/MuiTheme";
 
 const useStyles = makeStyles((theme) => ({
   textContainer: {
-    maxWidth: "500px",
+    maxWidth: "600px",
     marginLeft: theme.spacing(4),
     marginRight: theme.spacing(4),
     marginBottom: theme.spacing(4),
@@ -12,6 +12,7 @@ const useStyles = makeStyles((theme) => ({
     },
   },
   fiftyYears: {
+    color: colors.primary,
     textAlign: "center",
     marginBottom: theme.spacing(3),
   },
