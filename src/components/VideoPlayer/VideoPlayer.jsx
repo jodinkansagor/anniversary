@@ -1,6 +1,6 @@
 import React from "react";
 import ReactPlayer from "react-player";
-import Video from "../../assets/SyiBOvUBu.mp4";
+import Video from "../../assets/BknCTwDHd.mp4";
 import { useTheme, useMediaQuery, makeStyles } from "@material-ui/core";
 
 const useStyles = makeStyles((theme) => ({
